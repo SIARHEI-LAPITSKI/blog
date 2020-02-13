@@ -14,8 +14,8 @@
           praesentium quidem quod ratione, reiciendis
           rem repudiandae vero voluptas voluptatibus!
         </p>
-        <no-ssr>
-          <intro title="Lorem ipsum dolor sit amet" />
+        <client-only>
+          <Intro title="Lorem ipsum dolor sit amet" />
           <p>
             Lorem ipsum dolor sit amet,
             consectetur adipisicing elit.
@@ -27,7 +27,7 @@
             praesentium quidem quod ratione, reiciendis
             rem repudiandae vero voluptas voluptatibus!
           </p>
-        </no-ssr>
+        </client-only>
         <img src="~/assets/img/design-web.jpg" alt=""/>
         <p>
           Lorem ipsum dolor sit amet,
@@ -47,11 +47,8 @@
 </template>
 
 <script>
-  import intro from '~/components/UI/Intro'
   export default {
-    components: {
-      intro
-    }
+
   }
 </script>
 

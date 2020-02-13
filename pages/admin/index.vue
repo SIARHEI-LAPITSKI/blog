@@ -1,25 +1,10 @@
 <template>
-  <div class="wrapper-content wrapper-content--fixed">
-    <promo />
-    <Intro title="My lasts posts: " />
     <PostList :posts="posts" />
-    <Contact />
-  </div>
-
-
 </template>
 
 <script>
-  import promo from '~/components/Promo'
-  import Contact from "~/components/Contact";
-
-
-
   export default {
-    components: {
-      promo,
-      Contact
-    },
+    layout: 'admin',
     data(){
       return{
         posts: [
